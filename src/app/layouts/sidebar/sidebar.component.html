@@ -1,0 +1,118 @@
+<aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+       <li class="nav-item"> <a class="nav-link " routerLink="/dashboard"> <i class="bi bi-grid"></i> <span>Dashboard</span> </a></li>
+        <!-- products -->
+      <li class="nav-item"> <a class="nav-link " routerLink="/banners"> <i class="bi bi-blockquote-right"></i> <span>Banners</span> </a></li>
+        <!-- products -->
+      <li class="nav-item"> <a class="nav-link " routerLink="/products"> <i class="bi bi-ui-checks"></i> <span>Products</span> </a></li>
+      <!-- Vendor management -->
+      <li class="nav-item">
+         <a class="nav-link collapsed" data-bs-target="#vendor-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-people-fill"></i><span>Vendor Management</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+         <ul id="vendor-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li> <a routerLink="/vendor-list"> <i class="bi bi-circle"></i><span>Vendor List</span> </a></li>
+         </ul>
+      </li>
+      <!-- Delivery management -->
+      <li class="nav-item">
+         <a class="nav-link collapsed" data-bs-target="#delivery-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-truck"></i><span>Delivery Management</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+         <ul id="delivery-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li> <a routerLink="/delivery-boys"> <i class="bi bi-circle"></i><span>Delivery Boys</span> </a></li>
+            <li> <a routerLink="/delivery-pincode"> <i class="bi bi-circle"></i><span>Delivery Pincode</span> </a></li>
+         </ul>
+      </li>
+       <!-- orders -->
+       <li class="nav-item">
+         <a class="nav-link collapsed" data-bs-target="#orders-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-menu-button-wide"></i><span>Orders</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+         <ul id="orders-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li> <a routerLink="/total-orders"> <i class="bi bi-circle"></i><span>Total Orders</span> </a></li>
+            <li> <a routerLink="/completed-orders"> <i class="bi bi-circle"></i><span>Completed Orders</span> </a></li>
+            <li> <a routerLink="/pending-orders"> <i class="bi bi-circle"></i><span>Pending Orders</span> </a></li>
+            <li> <a routerLink="/rejected-orders"> <i class="bi bi-circle"></i><span>Rejected Orders</span> </a></li>
+         </ul>
+      </li>
+      <!-- Category -->
+      <li class="nav-item">
+         <a class="nav-link collapsed" data-bs-target="#category-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-layout-text-window-reverse"></i><span>Category</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+         <ul id="category-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li> <a routerLink="/category"> <i class="bi bi-circle"></i><span>All Category</span> </a></li>
+            <li> <a routerLink="/sub-category"> <i class="bi bi-circle"></i><span>SubCategory</span> </a></li>
+         </ul>
+      </li>
+      <!-- revenue -->
+      <li class="nav-item">
+         <a class="nav-link collapsed" data-bs-target="#revenue-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-currency-dollar"></i><span>Revenue Management</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+         <ul id="revenue-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li> <a routerLink="/view-online-payments"> <i class="bi bi-circle"></i><span>Online Payments</span> </a></li>
+            <li> <a routerLink="/view-cash-payments"> <i class="bi bi-circle"></i><span>Cash Payments</span> </a></li>
+            <li> <a routerLink="/view-cash-recived-from-delivery-boy"> <i class="bi bi-circle"></i><span>Cash Received From Delivery Boy</span> </a></li>
+         </ul>
+      </li>
+       <!-- instant order -->
+       <li class="nav-item">
+         <a class="nav-link collapsed" data-bs-target="#instantorder-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-menu-button-wide"></i><span>Instant Order</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+         <ul id="instantorder-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li> <a routerLink="/instant-order-status"> <i class="bi bi-circle"></i><span>Instanr Order Status</span> </a></li>
+            <li> <a routerLink="/order-range-driver"> <i class="bi bi-circle"></i><span>Order Range Driver</span> </a></li>
+         </ul>
+      </li>
+     
+      <!-- all menu -->
+       <!-- <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+          <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+             <li> <a routerLink="/alerts"> <i class="bi bi-circle"></i><span>Alerts</span> </a></li>
+             <li> <a routerLink="/accordion"> <i class="bi bi-circle"></i><span>Accordion</span> </a></li>
+             <li> <a routerLink="/badges"> <i class="bi bi-circle"></i><span>Badges</span> </a></li>
+             <li> <a routerLink="/breadcrumbs"> <i class="bi bi-circle"></i><span>Breadcrumbs</span> </a></li>
+             <li> <a routerLink="/buttons"> <i class="bi bi-circle"></i><span>Buttons</span> </a></li>
+             <li> <a routerLink="/cards"> <i class="bi bi-circle"></i><span>Cards</span> </a></li>
+             <li> <a routerLink="/carousel"> <i class="bi bi-circle"></i><span>Carousel</span> </a></li>
+             <li> <a routerLink="/list-group"> <i class="bi bi-circle"></i><span>List group</span> </a></li>
+             <li> <a routerLink="/modal"> <i class="bi bi-circle"></i><span>Modal</span> </a></li>
+             <li> <a routerLink="/tabs"> <i class="bi bi-circle"></i><span>Tabs</span> </a></li>
+             <li> <a routerLink="/pagination"> <i class="bi bi-circle"></i><span>Pagination</span> </a></li>
+             <li> <a routerLink="/progress"> <i class="bi bi-circle"></i><span>Progress</span> </a></li>
+             <li> <a routerLink="/spinners"> <i class="bi bi-circle"></i><span>Spinners</span> </a></li>
+             <li> <a routerLink="/tooltips"> <i class="bi bi-circle"></i><span>Tooltips</span> </a></li>
+          </ul>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+          <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+             <li> <a routerLink="/form-elements"> <i class="bi bi-circle"></i><span>Form Elements</span> </a></li>
+             <li> <a routerLink="/form-layouts"> <i class="bi bi-circle"></i><span>Form Layouts</span> </a></li>
+             <li> <a routerLink="/form-editors"> <i class="bi bi-circle"></i><span>Form Editors</span> </a></li>
+          </ul>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+          <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+             <li> <a routerLink="/tables-general"> <i class="bi bi-circle"></i><span>General Tables</span> </a></li>
+             <li> <a routerLink="/tables-data"> <i class="bi bi-circle"></i><span>Data Tables</span> </a></li>
+          </ul>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+          <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+             <li> <a routerLink="/charts-chartjs"> <i class="bi bi-circle"></i><span>Chart.js</span> </a></li>
+             <li> <a routerLink="/charts-apexcharts"> <i class="bi bi-circle"></i><span>ApexCharts</span> </a></li>
+          </ul>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-gem"></i><span>Icons</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+          <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+             <li> <a routerLink="/icons-bootstrap"> <i class="bi bi-circle"></i><span>Bootstrap Icons</span> </a></li>
+             <li> <a routerLink="/icons-remix"> <i class="bi bi-circle"></i><span>Remix Icons</span> </a></li>
+             <li> <a routerLink="/icons-boxicons"> <i class="bi bi-circle"></i><span>Boxicons</span> </a></li>
+          </ul>
+       </li>
+       <li class="nav-heading">Pages</li>
+       <li class="nav-item"> <a class="nav-link collapsed" routerLink="/user-profile"> <i class="bi bi-person"></i> <span>Profile</span> </a></li>
+       <li class="nav-item"> <a class="nav-link collapsed" routerLink="/pages-faq"> <i class="bi bi-question-circle"></i> <span>F.A.Q</span> </a></li>
+       <li class="nav-item"> <a class="nav-link collapsed" routerLink="/pages-contact"> <i class="bi bi-envelope"></i> <span>Contact</span> </a></li>
+       <li class="nav-item"> <a class="nav-link collapsed" routerLink="/pages-register"> <i class="bi bi-card-list"></i> <span>Register</span> </a></li>
+       <li class="nav-item"> <a class="nav-link collapsed" routerLink="/pages-login"> <i class="bi bi-box-arrow-in-right"></i> <span>Login</span> </a></li>
+       <li class="nav-item"> <a class="nav-link collapsed" routerLink="/pages-error404"> <i class="bi bi-dash-circle"></i> <span>Error 404</span> </a></li>
+       <li class="nav-item"> <a class="nav-link collapsed" routerLink="/pages-blank"> <i class="bi bi-file-earmark"></i> <span>Blank</span> </a></li> -->
+    </ul>
+ </aside>
